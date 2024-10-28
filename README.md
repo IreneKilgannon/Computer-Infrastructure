@@ -90,8 +90,18 @@ __Step 7: Test the Workflow__
 
 ## Contents of this repository
 
-The repository contains the following directories:
-    __complete as directories and files are added.__
+The repository contains the following directories and files:
+
+|Repository root |Subdirectory |File name |
+|---|--- |--- |
+|data |weather | |
+| |timestamps | now.txt|
+| | |formatted.txt |
+|||20241022_124153.txt|
+|img |-|.png files|
+|.gitignore | | |
+|README.md | | |
+|weather.ipynb | | |
 
 
 ## Get Started
@@ -106,11 +116,13 @@ The repository contains the following directories:
 
 3. Download and install [git](https://git-scm.com/downloads).
 
-3. Create a [GitHub account](https://github.com). The command line of [GitHub codespaces](https://github.com/features/codespaces) will be used in the tasks and project. 
+3. Create a [GitHub account](https://github.com). The command line of [GitHub Codespaces](https://github.com/features/codespaces) will be used for the tasks and project.
 
-4. Open Cmder (or the terminal in VSCode) and enter the following to clone the repository from GitHub:
+4. Open Cmder (or the terminal in VSCode) and enter the following to clone the repository from GitHub onto your own machine:
   
     ``git clone https://github.com/IreneKilgannon/computer_infrastructure.git``
+
+Tip: If you are switching from the virtual machine on GitHub Codespaces to working on your local machine, in the computer_infrastructure directory perform a ``git pull`` in either the terminal of VSCode or Cmder.
 
 
 ## Get Help
