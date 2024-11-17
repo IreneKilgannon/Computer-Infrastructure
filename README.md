@@ -1,5 +1,7 @@
 # Computer Infrastructure
 
+![Banner](img/banner.png)
+
 Author: Irene Kilgannon
 
 Student No: G00220627
@@ -38,7 +40,7 @@ Use the ``touch`` command to create an empty file with a name in the ``YYYYmmdd_
 
 __Task 5: Download Today's Weather Data__
 
-Change to the data/weather directory. Download the latest weather data for the Athenry weather station from Met Eireann using ``wget``. Use the ``-O <filename>`` option to save the file as ``weather.json``. The data can be found at this URL: `https://prodapi.metweb.ie/observations/athenry/today`.
+Change to the data/weather directory. Download the latest weather data for the Athenry weather station from Met Éireann using ``wget``. Use the ``-O <filename>`` option to save the file as ``weather.json``. The data is found at this URL: `https://prodapi.metweb.ie/observations/athenry/today`.
 
 __Task 6: Timestamp the Data__
 
@@ -102,13 +104,14 @@ The repository contains the following directories and files:
 |.gitignore | | |
 |README.md | | |
 |weather.ipynb | | |
+|weather.sh | | |
 
 
-## Get Started
+## Installation
 
 1. Download and install [Anaconda](https://www.anaconda.com/download). Anaconda is a Python distribution and comes with pre-installed packages. Please note that when installing Anaconda it is important to check the two boxes for:
-  * Add Anaconda3 to my PATH environment variable
-  * Register Anaconda3 as my default 
+  * Add Anaconda3 to my PATH environment variable.
+  * Register Anaconda3 as my default.
   
 ![Anaconda](https://github.com/IreneKilgannon/pands-project/blob/main/images/Anaconda.png)
 
@@ -122,7 +125,29 @@ The repository contains the following directories and files:
   
     ``git clone https://github.com/IreneKilgannon/computer_infrastructure.git``
 
-Tip: If you are switching from the virtual machine on GitHub Codespaces to working on your local machine, in the computer_infrastructure directory perform a ``git pull`` in either the terminal of VSCode or Cmder.
+
+## Access GitHub Codespaces
+
+New codespaces can be accessed in two ways in your GitHub account:
+
+* From the side bar, as shown in the image below. 
+
+  ![sidebar_github](img/codespaces_a.png)
+
+Clicking on Codespaces, will bring you into a window that displays any codespaces that you have created. Clicking on the green 'New codespace' will create a new codespace. 
+
+* Directly from the repository. In a directory, click on the green <Code> button, followed by Codespaces. Clicking ``Create codespace on main`` will create a new codespace. Created codespaces can also be accessed from here too. 
+
+![accessing codespace from the repository](img/codespaces.png)
+
+When you are finished working in the codespaces, it is important to disconnect the codespace. 
+
+![Stop the codespace](img/stop_codespace.png)
+
+Tip: If you are switching from the virtual machine on GitHub Codespaces to working on your local machine, in the computer_infrastructure directory perform a ``git pull`` in either the terminal of VSCode or
+Cmder.
+
+## Dependencies
 
 
 ## Get Help

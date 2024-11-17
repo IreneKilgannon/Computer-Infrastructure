@@ -218,3 +218,9 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Vscode (A dictionary of words for the spell checker to ignore)
+*.vscode/
+
+# Ignore for spellchecker
+.vscode/
