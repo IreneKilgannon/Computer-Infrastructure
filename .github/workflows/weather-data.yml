@@ -15,21 +15,25 @@ jobs:
     steps:
     # Step 1: Checkout the repository
     - name: Checkout Repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         persist-credentials: true # Ensures credentials are available for pushing changes
 
-    # Step 2: Install dependencies
-    - name: Install Required Tools
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y curl jq
+    # Step 2: Set up Python
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
 
-    # Step 3: Run the weather.sh script
+    # Step 3: Install dependencies
+    - name: Install Required Tools
+      run: pip install -r requirements.txt
+
+    # Step 4: Run the weather.sh script
     - name: Execute weather.sh
       run:  bash weather.sh
 
-    # Step 4: Commit and push changes back to the repository
+    # Step 5: Commit and push changes back to the repository
     - name: Commit and push changes
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
