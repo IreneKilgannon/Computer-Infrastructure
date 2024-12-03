@@ -132,17 +132,19 @@ New codespaces can be accessed in two ways in your GitHub account:
 
 * From the side bar, as shown in the image below. 
 
-  ![sidebar_github](img/codespaces_a.png)
+<img src="img/codespaces_a.png" alt="drawing" width="200"/>
+
 
 Clicking on Codespaces, will bring you into a window that displays any codespaces that you have created. Clicking on the green 'New codespace' will create a new codespace in your repository. 
 
-* Directly from the repository. In a directory, click on the green <Code> button, followed by Codespaces. Clicking ``Create codespace on main`` will create a new codespace. Created codespaces can also be accessed from here too.
+* Directly from the repository. In a directory, click on the green green code button, followed by Codespaces. Clicking ``Create codespace on main`` will create a new codespace. Created codespaces can also be accessed from here too.
 
-![accessing codespace from the repository](img/codespaces.png)
+<img src="img/codespaces.png" alt="drawing" width="500"/>
+
 
 When you are finished working in the codespaces, it is important to disconnect the codespace as it will continue running until it times out due to inactivity. Charges could be incurred unless it is disconnected. Closing the browser tab does not stop the codespace.
 
-![Stop the codespace](img/stop_codespace.png)
+<img src="img/stop_codespace.png" alt="drawing" width="300"/>
 
 
 Tip: If you are switching between the virtual machine on GitHub Codespaces to working on your local machine, in the computer_infrastructure directory perform a ``git pull`` in either the terminal of VSCode or
@@ -152,6 +154,7 @@ Cmder.
 
 ## Dependencies
 
+requirements.txt in the root of the repository contain the dependencies for this repository. Currently there are no dependencies. 
 
 ## Get Help
 
