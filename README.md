@@ -83,7 +83,7 @@ There are a number of ways to create a new codespace in your GitHub account.
 
 Clicking on Codespaces, will bring you to a window that displays any codespaces that have been created. Clicking on the green 'New codespace' will create a new codespace in your repository. 
 
-* Directly from the repository. Click on the green green code button, followed by Codespaces tab. Clicking ``Create codespace on main`` will create a new codespace. Created codespaces can also be accessed from here too.
+* Directly from the repository. Click on the green code button, followed by Codespaces tab. Clicking ``Create codespace on main`` will create a new codespace. Created codespaces can also be accessed from here too.
 
 <img src="img/codespaces.png" alt="drawing" width="500"/>
 
@@ -91,7 +91,7 @@ When you are finished working in the codespaces, it is important to disconnect t
 
 <img src="img/stop_codespace.png" alt="drawing" width="300"/>
 
-Tip: If you are switching between the virtual machine on GitHub Codespaces to working on your local machine, in either the terminal of VSCode or Cmder perform a ``git pull`` in the computer_infrastructure directory. Also after a new json file has been created by the GitHub Actions workflow, a ``git pull`` is required in GitHub codespaces to sync it with the repository.
+Tip: If you are switching between the virtual machine on GitHub Codespaces to working on your local machine, in either the terminal of VSCode or Cmder perform a ``git pull`` in the computer_infrastructure directory. Also, after a new json file has been created by the GitHub Actions workflow, a ``git pull`` is required in GitHub codespaces to sync it with the repository.
 
 [Quickstart for GitHub codespaces](https://docs.github.com/en/codespaces/getting-started/quickstart)
 
