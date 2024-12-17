@@ -34,14 +34,14 @@ The repository has the following directories and files:
 
 |Repository root |Subdirectory |Contents |
 |---|--- |--- |
-|data |weather |Downloaded weather data |
-| |timestamps | txt files|
+|data |weather |Weather data |
+| |timestamps | .txt files|
 |img |-|.png files|
-|.gitignore | | |
+|.gitignore | |File that git should ignore |
 |README.md | |Description of the repository and the project |
 |weather.ipynb | |Assessment tasks |
 |weather.sh | |Bash script |
-|requirements.txt | | |
+|requirements.txt | |Empty, can be used if any dependencies arise |
 
 ## Installation
 
@@ -65,13 +65,15 @@ To run the file on your local system, the following must be downloaded and insta
   
     `git clone https://github.com/IreneKilgannon/computer_infrastructure.git`
 
-## Usage
+## How to Use This Repository
 
-After the repository has been cloned, GitHub Codespaces could be used to replicate the tasks part of the assignment. Some of the commands used for the tasks will not run in Cmder or a Windows environment. 
+After the repository has been cloned, GitHub Codespaces can be used to replicate the tasks part of the assignment. Some of the commands used for the tasks will not run in a Windows environment. 
 
-To run the project, GitHub Actions in the repository is used. 
+To run the project, GitHub Actions in the repository is used. Select the workflow, Daily Weather Data Script in the sidebar of GitHub actions and click the 'Run workflow" button to trigger the workflow manually. 
 
-As [GitHub Codespaces](https://github.com/features/codespaces) uses Visual Studio Code in a Linux environment, the command line (terminal) of Visual Studio Code was used to run the commands for the tasks and project. 
+# Create a GitHub codespace.
+
+[GitHub Codespaces](https://github.com/features/codespaces) uses Visual Studio Code in a Linux environment. The command line (terminal) was used to run the commands for the tasks and project. 
 
 * In your GitHub account, create a GitHub repository. GitHub have a short guide on how to [create a new repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories).
 
@@ -284,7 +286,9 @@ Week lectures in computer_infrastructure
 
 If you have any questions or queries you can contact me at g00220627@atu.ie or alternatively [submit an issue](https://github.com/IreneKilgannon/computer_infrastructure/issues).
 
+## About the Author
 
+My name is Irene Kilgannon. I'm studying for a H. Dip in Data Analytics at Atlantic Technological University. I'm hoping to return to the workforce upon completion of the course.
 
 
 
