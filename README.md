@@ -22,9 +22,9 @@ The tasks and the project are fully outlined by the lecturer, Ian McLoughlin in 
 
 The assessment involves extensive use of the command line interface in GitHub Codespaces. 
 
-The overall aim of the tasks is to create a bash script, weather.sh that downloads weather information from the Athenry weather station. All the necessary steps to achieve this, from the basics of creating directories and timestamped files to writing the bash script, are documented in `weather.ipynb`. 
+The overall aim of the tasks is to create a bash script, weather.sh that downloads weather information from the Athenry weather station. All the necessary steps to achieve this, from the basics of creating files, directories and timestamped files to writing a bash script, are documented in `weather.ipynb`. 
 
-The project involves creating a GitHub Actions workflow using the bash script and automating it so that the weather data from the Athenry weather stations is downloaded at 10 am every day. The project is documented in this README.
+The project involves creating a GitHub Actions workflow using the bash script, weather.sh and automating it so that the weather data from the Athenry weather stations is downloaded at 10 am every day. The project is documented in this README.
 
 The final component of the assessment is an organized repository with a clear README and suitable gitignore. GitHub Issues was used to plan the work for each task. 
 
@@ -36,10 +36,10 @@ The repository has the following directories and files:
 |---|--- |--- |
 |data |weather |Weather data |
 | |timestamps | .txt files|
-|img |-|.png files|
+|img |-|.png image files|
 |.gitignore | |File that git should ignore |
 |README.md | |Description of the repository and the project |
-|weather.ipynb | |Assessment tasks |
+|weather.ipynb | |Description of the assessment tasks |
 |weather.sh | |Bash script |
 |requirements.txt | |Empty, can be used if any dependencies arise |
 
@@ -117,7 +117,7 @@ Workflows are defined using yml files or yaml files. [IBM.com](https://www.ibm.c
 
 The following steps were carried out:
 
-- In the repository, the .github/workflows directory and subdirectory were created. A file, weather-data.yml was added to .github/workflows.
+- In the repository, the .github/workflows directory and subdirectory were created. The file, [weather-data.yml](https://github.com/IreneKilgannon/computer_infrastructure/blob/main/.github/workflows/weather-data.yml) was added to .github/workflows.
 
 - In weather-data.yml, a GitHub Actions Workflow was created. 
 
@@ -214,7 +214,7 @@ After reviewing lecture notes this step was added to the workflow. This is the d
 
 According to this [blog](https://www.freecodecamp.org/news/python-requirementstxt-explained/), requirements.txt is a file in the root of the repository that has a list of packages or libraries needed to work on a project. For this workflow requirements.txt is an empty file as there are no dependencies to install. `wget` is a built-in package. 
 
-Some users `run pip freeze > requirements.txt` to write a full list of all the packages and libraries on their system to requirements.txt. This will replicate the exact package set up from one environment to another. As my workflow runs without this was not necessary.
+Some users `run pip freeze > requirements.txt` to write a full list of all the packages and libraries on their system to requirements.txt. This will replicate the exact package set up from one environment to another. As my workflow runs without this, this was not necessary.
 
 ***
 - __Brief:__ Execute the weather.sh Script
@@ -258,7 +258,7 @@ Use the `Run workflow` button to trigger the workflow manually.
 
 ![Workflow dispatch](img/workflow_dispatch.png)
 
-The [logs](https://github.com/IreneKilgannon/computer_infrastructure/actions/workflows/weather-data.yml) show that the workflow has been triggered 29 times to date. A new timestamped.json file is added to data/weather shortly after 10 am every day.
+The [logs](https://github.com/IreneKilgannon/computer_infrastructure/actions/workflows/weather-data.yml) show that the workflow has been triggered 37 times to date. A new timestamped.json file is added to data/weather shortly after 10 am every day.
 
 ![Check logs](img/Check_logs.png)
 
