@@ -18,7 +18,7 @@ The purpose of the assessment, as described in the GitHub repository for [Comput
 
 ## Outline of the Tasks and Project
 
-The tasks and the project are described by the lecturer, Ian McLoughlin in the [Computer Infrastructure README](https://github.com/ianmcloughlin/2425_computer_infrastructure/blob/main/README.md) for the Computer Infrastructure repository on GitHub. 
+The tasks and the project are described by the lecturer, Ian McLoughlin in the [README](https://github.com/ianmcloughlin/2425_computer_infrastructure/blob/main/README.md) for the Computer Infrastructure repository on GitHub. 
 
 The assessment involves extensive use of the command line interface in GitHub Codespaces. 
 
