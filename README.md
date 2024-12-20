@@ -14,19 +14,19 @@ The purpose of the assessment, as described in the GitHub repository for [Comput
 
 3. Compare commonly available software infrastructures and architectures.
 
-4. Select appropriate infrastructure for a given computational task.
+4. Select the appropriate infrastructure for a given computational task.
 
 ## Outline of the Tasks and Project
 
-The tasks and the project are fully outlined by the lecturer, Ian McLoughlin in the [README](https://github.com/ianmcloughlin/2425_computer_infrastructure/blob/main/README.md) for the Computer Infrastructure repository on GitHub. 
+The tasks and the project are described by the lecturer, Ian McLoughlin in the [Computer Infrastructure README](https://github.com/ianmcloughlin/2425_computer_infrastructure/blob/main/README.md) for the Computer Infrastructure repository on GitHub. 
 
 The assessment involves extensive use of the command line interface in GitHub Codespaces. 
 
-The overall aim of the tasks is to create a bash script, weather.sh that downloads weather information from the Athenry weather station. All the necessary steps to achieve this, from the basics of creating files, directories and timestamped files to writing a bash script, are documented in `weather.ipynb`. 
+The overall aim of the tasks is to create a bash script, weather.sh that downloads weather information from the Athenry weather station. All the necessary steps to achieve this, from the basics of creating files, directories, and timestamped files to writing a bash script, are documented in `weather.ipynb`. 
 
-The project involves creating a GitHub Actions workflow using the bash script, weather.sh and automating it so that the weather data from the Athenry weather stations is downloaded at 10 am every day. The project is documented in this README.
+The project involves creating a GitHub Actions workflow using the bash script, weather.sh, and automating it so that the weather data from the Athenry weather stations is downloaded at 10 am every day. The project is documented in this README.
 
-The final component of the assessment is an organized repository with a clear README and suitable gitignore. GitHub Issues was used to plan the work for each task. 
+The final component of the assessment is an organized repository with a clear README and suitable .gitignore. GitHub Issues was used to plan the work for each task. 
 
 ## Contents of this repository
 
@@ -61,45 +61,45 @@ To run the file on your local system, the following must be downloaded and insta
 
 5. Create a [GitHub account](https://github.com). 
 
-6. Open Cmder (or the terminal of Visual Studio Code) and enter the following to clone the repository from GitHub onto your own machine:
+6. Open Cmder (or the terminal of Visual Studio Code) and enter the following to clone the repository from GitHub to your local machine:
   
     `git clone https://github.com/IreneKilgannon/computer_infrastructure.git`
 
 ## How to Use This Repository
 
-After the repository has been cloned, GitHub Codespaces can be used to replicate the tasks part of the assignment. Some of the commands used for the tasks will not run in a Windows environment. 
+After cloning the repository, GitHub Codespaces can be used to replicate the tasks part of the assignment. Some of the commands used will not run in a Windows environment. 
 
-To run the project, GitHub Actions in the repository is used. Select the workflow, Daily Weather Data Script in the sidebar of GitHub actions and click the 'Run workflow" button to trigger the workflow manually. 
+The project is run with GitHub Actions. In GitHub Actions, select Daily Weather Data Script and click 'Run workflow" to trigger the workflow manually. 
 
 # Create a GitHub codespace.
 
-[GitHub Codespaces](https://github.com/features/codespaces) uses Visual Studio Code in a Linux environment. The command line (terminal) was used to run the commands for the tasks and project. 
+[GitHub Codespaces](https://github.com/features/codespaces) uses Visual Studio Code in a Linux environment. The terminal of Visual Studio Code within GitHub Codespaces was used for the tasks. 
 
-* In your GitHub account, create a GitHub repository. GitHub have a short guide on how to [create a new repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories).
+* In your GitHub account, create a GitHub repository. GitHub has a short guide on how to [create a new repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/quickstart-for-repositories).
 
-There are a number of ways to create a new codespace in your GitHub repository. 
+There are several ways to create a new codespace in your GitHub repository. 
 
-* From the side bar, as shown in the image below. 
+* From the sidebar, as shown in the image below. 
 
 <img src="img/codespaces_a.png" alt="drawing" width="200"/>
 
-Clicking on Codespaces, will bring you to a window that displays any codespaces that have been created. Clicking on the green 'New codespace' will create a new codespace in your repository. 
+Clicking on Codespaces will bring you to a window that displays any codespaces that have been created. Clicking on the green 'New codespace' will create a new codespace in your repository. 
 
-* Directly from the repository. Click on the green code button, followed by Codespaces tab. Clicking `Create codespace on main` will create a new codespace. Created Codespaces can be accessed from here too.
+* Directly from the repository. Click on the green code button, followed by the Codespaces tab. Clicking `Create codespace on main` will create a new codespace. Created Codespaces can be accessed from here too.
 
 <img src="img/codespaces.png" alt="drawing" width="500"/>
 
-When you are finished working in the codespace, it is important to disconnect the codespace as it will continue running until it times out due to inactivity. Charges could be incurred unless it is disconnected. Closing the browser tab does not stop the codespace.
+When you are finished working in the codespace, it is important to disconnect the codespace. It will continue running until it times out due to inactivity. Charges could be incurred if it is not disconnected. Closing the browser tab does not stop the codespace.
 
 <img src="img/stop_codespace.png" alt="drawing" width="300"/>
 
-Tip: If you are switching between the virtual machine on GitHub Codespaces to working on your local machine, in either the terminal of VSCode or Cmder perform a `git pull` in the computer_infrastructure directory. Also, after a new json file has been pushed by GitHub Actions to the repository, a `git pull` is needed to sync GitHub Codespaces with the repository.
+Tip: If you are switching between the virtual machine on GitHub Codespaces to your local machine, in either the terminal of VSCode or Cmder perform a `git pull` in the computer_infrastructure directory. Also, after a new JSON file has been pushed by GitHub Actions to the repository, a `git pull` is needed to sync GitHub Codespaces with the repository.
 
 [Quickstart for GitHub codespaces](https://docs.github.com/en/codespaces/getting-started/quickstart)
 
 ## Dependencies
 
-Currently there are no special packages or libraries required. Any dependencies will be added to `requirements.txt` that is found in the root of the repository.
+Currently, no special packages or libraries are required. Any dependencies will be added to `requirements.txt` which is at the root of the repository.
 
 ## Project
 
@@ -107,11 +107,11 @@ Project brief: Automate weather.sh to run daily at 10 am and push the new data t
 
 ### Introduction
 
-GitHub Actions was used to carry out this project. GitHub Actions is a cloud-based automation platform that allows developers to set up workflows to automate tasks. An event will trigger a workflow and depending on the event a different workflow will be triggered. For example, a workflow could be triggered if there is a pull or push request to a repository. Every time something happens in your repository, automatic actions could be executed in response. 
+GitHub Actions was used to carry out this project. GitHub Actions is a cloud-based automation platform that allows developers to set up workflows to automate tasks. An event triggers a workflow and depending on the event a workflow will be triggered. For example, a workflow could be triggered by a pull or push request to a repository. Every time something happens in your repository, automatic actions could be executed in response. 
 
-GitHub Actions makes things simpler for the developer. Github manages the infrastructure, so it gives the developer the environment they need without having to install it on their local computer. It integrates with other technologies - workflows can be run on Linux, Windows or macOS.  In addition, multiple jobs can be run at the same time as each job in a workflow runs in a fresh virtual environment.
+GitHub Actions simplifies tasks for the developer. GitHub manages the infrastructure and gives the developer the environment they need without having to install it on their local computer. It integrates with other technologies - workflows can be run on Linux, Windows, or macOS.  In addition, multiple jobs can be run at the same time as each job in a workflow runs in a fresh virtual environment.
 
-Workflows are defined using yml files or yaml files. [IBM.com](https://www.ibm.com/topics/yaml) states that YML files define sequences of actions and configurations in an easily understandable form. There are workflow templates to automatically create the yml file needed. These are pre-configured and can be modified by the developer to their own task. 
+Workflows are defined using YML files or YAML files. [IBM.com](https://www.ibm.com/topics/yaml) states that YML files define sequences of actions and configurations in an easily understandable form. There are workflow templates to automatically create the YML file needed. These are pre-configured and can be modified by the developer to their task. 
 
 ### Steps to Complete the Project
 
@@ -131,7 +131,7 @@ name:  Describes what the workflow is doing.
 
 - __Brief:__ Run Daily at 10 am. 
 
-Use the schedule event with cron to set the script to run once a day at 10 am. Also include the workflow dispatch event so you can test the workflow.
+Use the schedule event with cron to set the script to run once a day at 10 am. Also, include the workflow dispatch event so you can test the workflow.
 
   ```yml
   on:
@@ -145,7 +145,7 @@ Use the schedule event with cron to set the script to run once a day at 10 am. A
 
 on: Sets out the trigger that runs the workflow.
 
-Workflow triggers are events that cause a workflow to run. The full list of triggers is found in the [events that trigger workflows documentation](https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows). For this event, the [schedule trigger](https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#schedule) is required. This triggers a workflow at a scheduled time. For this project we want to run the event at 10 am every day. This can be done with `cron` which is suitable for scheduling repetitive tasks. 
+Workflow triggers are events that cause a workflow to run. The full list of triggers is found in the [events that trigger a workflow documentation](https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows). For this event, the [schedule trigger](https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#schedule) is required. This triggers a workflow at a scheduled time. For this project, we want to run the event daily at 10 am. This can be done with `cron` which is suitable for scheduling repetitive tasks. 
 
 This schematic, taken from the schedule documentation, illustrates the syntax for `cron`.
 
@@ -177,8 +177,8 @@ jobs:
 
 jobs: This groups a set of actions that will be executed.
 
-  run-on: Select from Ubuntu, Windows and macOS.
-    All jobs can be run on Ubuntu, Windows and macOS virtual machines. It is possible to test the workflow on all three operating systems. For this project, the latest version of Ubuntu is needed. Ubuntu is a popular distribution of Linux.
+  run-on: Select from Ubuntu, Windows, and macOS.
+    All jobs can be run on Ubuntu, Windows, and macOS virtual machines. It is possible to test workflows on all three operating systems. For this project, the latest version of Ubuntu is needed. Ubuntu is a popular distribution of Linux.
 
 ***
 
@@ -193,7 +193,7 @@ Have the workflow clone your repository.
       uses: actions/checkout@v4
 ```
 
-To build an action the first step is to checkout the repository. There is a repository of predefined actions available on [github.com/actions](https://github.com/actions). The [checkout action](https://github.com/actions/checkout/tree/main) does what it says on the tin and checks out the users repository so that the workflow can access it. The version was updated to v4, which is the latest version as per the documentation. 
+To build an action the first step is to check out the repository. There is a repository of predefined actions available on [github.com/actions](https://github.com/actions). The [checkout action](https://github.com/actions/checkout/tree/main) checks out the user's repository so that the workflow can access it. The version was updated to v4, which is the latest version as per the documentation. 
 
 ```yml
     # Step 2: Set up Python
@@ -204,7 +204,7 @@ To build an action the first step is to checkout the repository. There is a repo
 
 ```
 
-After reviewing lecture notes this step was added to the workflow. This is the documentation on [adding setup-python](https://github.com/actions/setup-python) to a workflow. This will ensure that the latest version of python 3 is installed.
+After reviewing lecture notes this step was added to the workflow. This is the documentation on [adding setup-python](https://github.com/actions/setup-python) to a workflow. This will ensure that the latest version of Python 3 is installed.
 
 ```yml
     # Step 3: Install dependencies
@@ -212,9 +212,9 @@ After reviewing lecture notes this step was added to the workflow. This is the d
       run: pip install -r requirements.txt
 ```
 
-According to this [blog](https://www.freecodecamp.org/news/python-requirementstxt-explained/), requirements.txt is a file in the root of the repository that has a list of packages or libraries needed to work on a project. For this workflow requirements.txt is an empty file as there are no dependencies to install. `wget` is a built-in package. 
+According to this [blog](https://www.freecodecamp.org/news/python-requirementstxt-explained/), requirements.txt is a file at the root of the repository with a list of packages or libraries needed to work on a project. For this workflow, requirements.txt is an empty file as there are no dependencies to install as `wget` is a built-in package. 
 
-Some users `run pip freeze > requirements.txt` to write a full list of all the packages and libraries on their system to requirements.txt. This will replicate the exact package set up from one environment to another. As my workflow runs without this, this was not necessary.
+Some users `run pip freeze > requirements.txt` to write a full list of all the packages and libraries on their system to requirements.txt. This will replicate the exact package setup from one environment to another. As my workflow runs without this, this was not necessary.
 
 ***
 - __Brief:__ Execute the weather.sh Script
@@ -246,23 +246,23 @@ Configure the workflow to commit the new weather data and push those changes bac
         git push origin HEAD:main
 ```
 
-This final step commits and pushes the timestamped file created by weather.sh to the repository. These commits and pushed are done by GitHub actions (the GitHub-actions[bot]). 
+This final step commits and pushes the timestamped file created by weather.sh to the repository. These commits and pushes are done by GitHub actions (the GitHub-actions[bot]). 
 
 - __Brief:__ Test the Workflow
 
-Commit and push the workflow to your repository. Check the logs in GitHub to ensure that the weather.sh script runs correctly, that new data is being committed.
+Commit and push the workflow to your repository. Check the logs in GitHub to ensure that the weather.sh script runs correctly and that new data is being committed.
 
-To trigger the workflow manually and to view the logs of the workflow, go to the [GitHub Actions section](https://github.com/IreneKilgannon/computer_infrastructure/actions) in the computer_infrastructure repository. 
+To trigger the workflow manually and view the workflow logs, go to [GitHub Actions](https://github.com/IreneKilgannon/computer_infrastructure/actions) in the computer_infrastructure repository. 
 
 Use the `Run workflow` button to trigger the workflow manually.
 
 ![Workflow dispatch](img/workflow_dispatch.png)
 
-The [logs](https://github.com/IreneKilgannon/computer_infrastructure/actions/workflows/weather-data.yml) show that the workflow has been triggered 37 times to date. A new timestamped.json file is added to data/weather shortly after 10 am every day.
+The [logs](https://github.com/IreneKilgannon/computer_infrastructure/actions/workflows/weather-data.yml) show that the workflow has been triggered 37 times to date. A new timestamped.json file is added to data/weather shortly after 10 am.
 
 ![Check logs](img/Check_logs.png)
 
-By clicking on a log file, it is possible to view the steps that workflow took to run the script and the time it took to complete each step, as shown below. Currently there is also an Annotation with one warning. This warning states that the latest version of Ubuntu will soon be upgraded to ubuntu-24.04.
+By clicking on a log file, it is possible to view the steps that workflow took to run the script and the time it took to complete each step, as shown below. Currently, there is an annotation with one warning. This warning states that the latest version of Ubuntu will soon be upgraded to ubuntu-24.04.
 
 <img src="img/steps.png" alt="drawing" width="550"/>
 
@@ -270,7 +270,7 @@ The first few times I ran this script the workflow reported an error in the comm
 
 <img src="img/error.png" alt="drawing" width="700"/>
 
-In addition to the script permissions there are workflow permissions settings within GitHub itself. In the Settings tab in the repository, navigate to Actions and then select General. Changing the Workflow permissions to Read and write permissions allowed the script to run. The GitHub [documentation on managing github actions settings for a repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#allowing-select-actions-and-reusable-workflows-to-run) was used to solve this issue.
+In addition to the script permissions, there are workflow permissions settings within GitHub. In the Settings tab in the repository, navigate to Actions and then select General. Changing the Workflow permissions to Read and write permissions allowed the script to run. The GitHub [documentation on managing GitHub Actions settings for a repository](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/enabling-features-for-your-repository/managing-github-actions-settings-for-a-repository#allowing-select-actions-and-reusable-workflows-to-run) was used to solve this issue.
 
 ![Actions permissions](img/permissions.png)
 
@@ -280,15 +280,15 @@ Week lectures in computer_infrastructure
 
 [chatGPT](chatGPT.com)
 
-[Github actions tutorial - basic concepts and CI/CD Pipeline with Docker](https://www.youtube.com/watch?v=R8_veQiYBjI)
+[GitHub actions tutorial - basic concepts and CI/CD Pipeline with Docker](https://www.youtube.com/watch?v=R8_veQiYBjI)
 
 ## Get Help
 
-If you have any questions or queries you can contact me at g00220627@atu.ie or alternatively [submit an issue](https://github.com/IreneKilgannon/computer_infrastructure/issues).
+If you have any questions or queries you can contact me at g00220627@atu.ie or [submit an issue](https://github.com/IreneKilgannon/computer_infrastructure/issues).
 
 ## About the Author
 
-My name is Irene Kilgannon. I'm studying for a H. Dip in Data Analytics at Atlantic Technological University. I'm hoping to return to the workforce upon completion of the course.
+My name is Irene Kilgannon. I'm studying for a H. Dip in Data Analytics at Atlantic Technological University.
 
 
 
