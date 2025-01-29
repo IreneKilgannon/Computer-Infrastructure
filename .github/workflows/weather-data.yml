@@ -2,8 +2,8 @@ name: Daily Weather Data Script
 
 on:
   # Schedule the workflow to run at 10:00 AM UTC every day
-  schedule:
-    - cron: '0 10 * * *'
+  #schedule:
+  #  - cron: '0 10 * * *'
   
   # Allow manual triggering of the workflow
   workflow_dispatch:
